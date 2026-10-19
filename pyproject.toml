@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rowpeek"
+version = "0.1.0"
+description = "Peek inside any CSV in seconds: shape, column types, nulls, ranges, top values. Zero dependencies."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "Krrish" }]
+keywords = ["csv", "cli", "data", "profiling", "eda", "productivity"]
+
+[project.scripts]
+rowpeek = "rowpeek.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/codewithkrrish/rowpeek"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["rowpeek*"]
