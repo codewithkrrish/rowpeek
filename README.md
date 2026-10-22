@@ -35,7 +35,7 @@ rowpeek is that. Point it at a file, get the one-page summary you'd have eyeball
 ## Install
 
 ```bash
-pip install rowpeek
+pip install git+https://github.com/codewithkrrish/rowpeek.git
 ```
 
 Or run it without installing:
